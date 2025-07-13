@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  background:  url('https://www.transparenttextures.com/patterns/dark-mosaic.png');
+  background-repeat: repeat;
+  background-size: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #eee;
+}
+
+
+section {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #fff;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(0,0,0,0.6);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #1e90ff;
+  display: flex;
+  align-items: center;
+}
+
+.project-card h3 i {
+  margin-right: 8px;
+}
+
+.project-card p {
+  color: #bbb;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.project-card a {
+  display: inline-block;
+  background: #1e90ff;
+  color: #fff;
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.project-card a:hover {
+  background: #0b65c2;
+}
+
+.bio-section {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.bio-section p {
+  color: #ccc;
+  font-size: 16px;
+  line-height: 1.6;
+}
+#Mypro
+{
+    color: black;
+}
+
+/* Animation Keyframes */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
