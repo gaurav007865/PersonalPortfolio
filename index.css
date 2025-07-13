@@ -1,0 +1,177 @@
+#Name
+{
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #007bff, #00ff95, #007bff);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: flowingText 3s linear infinite;
+    letter-spacing: 0.2em;
+    text-align: center;
+    padding: 2rem 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #f0f0f0;
+}
+
+/* Container fixed to right center */
+.Buttons {
+  position: fixed;
+  padding-right: 80px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* space between buttons */
+}
+
+/* Remove default h3 margin */
+.Buttons h3 {
+  margin: 0;
+}
+
+/* Button styling */
+.Buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 150px; /* SAME WIDTH for all buttons */
+  height: 45px; /* SAME HEIGHT for all buttons */
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth animation */
+}
+
+/* Hover effect: scale and color change */
+.Buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.08);
+}
+
+/* Active (click) effect */
+.Buttons button:active {
+  transform: scale(0.95);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://i.ytimg.com/vi/zob-2dpRtH0/maxresdefault.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Paragraph Styles */
+.intro,
+.education {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+  max-width: 600px;
+  margin: 30px 20px; /* top-bottom 30px, left-right 20px */
+  text-align: left;
+  padding-left: 80px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 1s ease forwards;
+  transition: transform 0.3s ease;
+}
+
+.education {
+  font-weight: normal;
+  font-size: 18px;
+  animation-delay: 0.5s;
+}
+
+/* Highlighted name */
+.highlight {
+  color: #4CAF50;
+  font-weight: bold;
+}
+
+.institute {
+  color: #007BFF;
+  font-weight: bold;
+}
+
+/* Buttons container */
+.Buttons {
+  position: fixed;
+  top: 50%;
+  right: 30px;      /* Keep distance from right edge */
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 180px; /* Buttons won't exceed this width */
+}
+
+/* Remove default h3 margin */
+.Buttons h3 {
+  margin: 0;
+}
+
+/* Button styling */
+.Buttons button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  width: 150px;     /* Fixed width */
+  height: 45px;     /* Fixed height */
+  font-size: 16px;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover and active effects */
+.Buttons button:hover {
+  background-color: #45a049;
+  transform: scale(1.08);
+}
+
+.Buttons button:active {
+  transform: scale(0.95);
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 600px) {
+  .intro,
+  .education {
+    font-size: 16px;
+    margin: 20px;
+    max-width: 90%;
+  }
+
+  .Buttons {
+    position: static;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .Buttons button {
+    width: auto;
+    min-width: 100px;
+  }
+}
