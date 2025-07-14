@@ -104,3 +104,72 @@ body::before {
     transform: translateY(0);
   }
 }
+/* Extra Work */
+
+@media (max-width: 768px) {
+  .work-section {
+    padding: 30px 15px;
+  }
+
+  .work-section h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .work-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .work-card {
+    padding: 20px;
+  }
+
+  .work-card i {
+    font-size: 32px;
+  }
+
+  .bio-section {
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .bio-section h2 {
+    font-size: 1.6em;
+  }
+
+  .bio-section p {
+    font-size: 0.95em;
+  }
+}
+
+@media (max-width: 480px) {
+  .work-section h1 {
+    font-size: 1.7rem;
+  }
+
+  .work-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .work-card {
+    padding: 15px;
+  }
+
+  .work-card i {
+    font-size: 28px;
+  }
+
+  .bio-section {
+    padding: 10px;
+  }
+
+  .bio-section h2 {
+    font-size: 1.4em;
+  }
+
+  .bio-section p {
+    font-size: 0.9em;
+  }
+}

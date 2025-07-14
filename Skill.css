@@ -91,3 +91,61 @@ h1 {
 .skill-card:hover .skill-icon {
   animation: bounce 0.6s;
 }
+/* Extra Add */
+@media (max-width: 768px) {
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+
+  .skill-card {
+    padding: 15px;
+  }
+
+  .skill-icon {
+    font-size: 2rem;
+  }
+
+  .skill-name {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+
+  .bio {
+    font-size: 1rem;
+    margin: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-container {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .skill-card {
+    padding: 12px;
+  }
+
+  .skill-icon {
+    font-size: 1.8rem;
+  }
+
+  .skill-name {
+    font-size: 0.95rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  .bio {
+    font-size: 0.95rem;
+    margin: 10px;
+  }
+}

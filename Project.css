@@ -103,3 +103,77 @@ h2 {
   }
 }
 
+/* Extra Add */
+
+@media (max-width: 768px) {
+  section {
+    padding: 20px;
+  }
+
+  .projects {
+    grid-template-columns: 1fr; /* single column on mobile */
+    gap: 15px;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+
+  .project-card h3 {
+    font-size: 18px;
+  }
+
+  .project-card p {
+    font-size: 13px;
+  }
+
+  .project-card a {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .bio-section {
+    margin: 30px 10px;
+    padding: 15px;
+  }
+
+  .bio-section p {
+    font-size: 14px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    padding: 12px;
+  }
+
+  .project-card h3 {
+    font-size: 16px;
+  }
+
+  .project-card p {
+    font-size: 12px;
+  }
+
+  .project-card a {
+    font-size: 13px;
+    padding: 6px 10px;
+  }
+
+  .bio-section {
+    margin: 20px 10px;
+    padding: 12px;
+  }
+
+  .bio-section p {
+    font-size: 13px;
+  }
+
+  #Mypro {
+    font-size: 18px;
+  }
+}
